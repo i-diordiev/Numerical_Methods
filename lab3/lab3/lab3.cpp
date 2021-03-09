@@ -62,6 +62,7 @@ int main()
 
     do {
         iteration++;
+        diff = 0;
         for (int i = 0; i < SIZE; i++) {
             double sum = 0;
             for (int j = 0; j < SIZE; j++) {
@@ -71,7 +72,7 @@ int main()
         }
 
         for (int i = 0; i < SIZE; i++) {
-            if (fabs(vectorX - vectorX_prev) > diff) {
+            if (fabs(vectorX[i] - vectorX_prev[i]) > diff) {
                 diff = fabs(vectorX[i] - vectorX_prev[i]);
             }
         }

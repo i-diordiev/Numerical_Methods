@@ -78,6 +78,7 @@ void FindMax(double matrix[][4], int n, int m, int& i_max, int& j_max) {
             if (matrix[i][j] > max) {
                 i_max = i;
                 j_max = j;
+                max = matrix[i][j];
             }
         }
     }
