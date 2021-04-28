@@ -35,7 +35,6 @@ int main() {
     cout << "x = " << x << endl;
     cout << "Number of iterations: " << iter << endl;
 
-
     system("pause");
     return 0;
 }
