@@ -14,11 +14,11 @@ int main() {
     cout << "Function: (cos(x)) / (x + 1) in range [" << a << ";" << b << "]" << endl;
 
     cout << endl << "Trapezium method" << endl;  // викликаємо функцію для пошуку інтеграла методом трапеції
-    cout << "Result: " << Trapezium(a, b, EPS, counter) << endl;
+    printf("Result: %6.4f\n", Trapezium(a, b, EPS, counter));
     cout << "Count of iterations: " << counter << endl;
 
     cout << endl << "Gaussian method" << endl;  // викликаємо функцію для пошуку інтеграла квадратурною формулою Гауса
-    cout << "Result: " << Gauss(a, b) << endl;
+    printf("Result: %6.4f\n", Gauss(a, b));
     cout << "m = 4" << endl;
 
     system("pause");
